@@ -10,7 +10,7 @@ const app = async (yargsObj) => {
         } else if(yargsObj.list) {
             await listMovies();
         } else if(yargsObj.update) {
-            await updateMovies({title:yargsObj.newTitle,actor:yargsObj.newActor},{where:{title:yargsObj.oldTitle}});
+            await updateMovies({title:yargsObj.newTitle,actor:yargsObj.newActor,rating:yargsObj.newRating},{where:{title:yargsObj.oldTitle}});
         } else if(yargsObj.delete) {
             await deleteMovie({where:{title:yargsObj.delete}});
         } else {console.log("wrong input");}

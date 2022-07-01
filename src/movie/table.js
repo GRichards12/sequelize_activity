@@ -16,4 +16,10 @@ const Movie = sequelize.define("Movie", {
     }
 });
 
+// const User = sequelize.define("User", {
+//     User:{
+//         type:DataTypes.STRING,
+//     }
+// })
+
 module.exports = Movie;
